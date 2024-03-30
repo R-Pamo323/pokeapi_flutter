@@ -1,6 +1,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:pokeapi_flutter/Constants/app_colors.dart';
+import 'package:pokeapi_flutter/Constants/app_styles.dart';
 import 'package:pokeapi_flutter/utils/controllers_utils.dart';
 
 class GridWidget extends StatelessWidget {
@@ -42,8 +44,8 @@ class GridWidget extends StatelessWidget {
                                     width: width,
                                     margin: const EdgeInsets.only(top: 80),
                                     decoration: BoxDecoration(
-                                        color: Colors.black26,
-                                        borderRadius: BorderRadius.all(
+                                        color: MyColors.boxColorType,
+                                        borderRadius: const BorderRadius.all(
                                             Radius.circular(25))),
                                     child: Stack(
                                       children: [
@@ -52,21 +54,16 @@ class GridWidget extends StatelessWidget {
                                             left: 15,
                                             child: Text(
                                               _.pokedex[index]["num"],
-                                              style: const TextStyle(
-                                                  fontWeight: FontWeight.bold,
-                                                  fontSize: 18,
-                                                  color: Color.fromARGB(
-                                                      255, 128, 64, 48)),
+                                              style:
+                                                  MyStyles.numPokemonStyleText,
                                             )),
                                         Positioned(
                                             top: 130,
                                             left: 15,
                                             child: Text(
                                               _.pokedex[index]["name"],
-                                              style: const TextStyle(
-                                                  fontWeight: FontWeight.bold,
-                                                  fontSize: 18,
-                                                  color: Colors.white54),
+                                              style:
+                                                  MyStyles.namePokemonStyleText,
                                             )),
                                         Positioned(
                                             top: 170,

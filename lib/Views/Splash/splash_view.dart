@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:pokeapi_flutter/Constants/app_colors.dart';
 import 'package:pokeapi_flutter/utils/controllers_utils.dart';
 
 class SplashView extends StatelessWidget {
@@ -17,7 +18,7 @@ class SplashView extends StatelessWidget {
             Container(
               width: width,
               height: height,
-              color: Colors.deepOrange,
+              color: MyColors.backgroundSplash,
             ),
             SizedBox.expand(
               child: Column(
