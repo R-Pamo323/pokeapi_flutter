@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pokeapi_flutter/Controllers/Home/home_controller.dart';
-import 'package:pokeapi_flutter/Views/Home/Widgets/background_image_widget.dart';
-import 'package:pokeapi_flutter/Views/Home/Widgets/grid_widget.dart';
-import 'package:pokeapi_flutter/Views/Home/Widgets/title_widget.dart';
+import 'package:pokeapi_flutter/utils/controllers_utils.dart';
+import 'package:pokeapi_flutter/utils/widgets_utils.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});

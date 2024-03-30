@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pokeapi_flutter/Routes/app_pages.dart';
-import 'package:pokeapi_flutter/Views/Splash/splash_view.dart';
+import 'package:pokeapi_flutter/utils/views_utils.dart';
 
 void main() {
   runApp(const MyApp());

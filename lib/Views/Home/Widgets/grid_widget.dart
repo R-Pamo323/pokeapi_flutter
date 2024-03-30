@@ -1,7 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pokeapi_flutter/Controllers/Home/home_controller.dart';
+import 'package:pokeapi_flutter/utils/controllers_utils.dart';
 
 class GridWidget extends StatelessWidget {
   const GridWidget({super.key});
