@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:pokeapi_flutter/Views/Home/home_view.dart';
+import 'package:get/get.dart';
+import 'package:pokeapi_flutter/Routes/app_pages.dart';
+import 'package:pokeapi_flutter/Views/Splash/splash_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,13 +12,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
         title: 'PokeAPI Flutter GetX',
         debugShowCheckedModeBanner: false,
+        getPages: AppPages.pages,
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const HomeView());
+        home: const SplashView());
   }
 }
